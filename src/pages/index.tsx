@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import WhatWeDo from '@/components/home/WhatWeDo'
-import Footer from '@/components/footer/footer'
-
+import WhatWeDo from '@/components/home/whatWeDo'
 const inter = Inter({ subsets: ['latin'] })
+import Footer from '@/components/footer/footer'
+import Team from '@/components/home/team'
+
 
 export default function Home() {
+
+
+
   return (
     <>
       <Head>
@@ -15,9 +19,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+      <Team />
         <WhatWeDo />
         <Footer />
-        Welcome
       </main>
     </>
   )

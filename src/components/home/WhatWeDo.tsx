@@ -4,7 +4,7 @@ import Launching from '@/components/assets/Launching.gif'
 import Image from 'next/image'
 import { motion } from "framer-motion"
 
-function WhatWeDo() {
+function whatWeDo() {
 
   const services = [
     {
@@ -82,12 +82,9 @@ function WhatWeDo() {
             ))}
           </div>
       </div>
-
-
-
     </section>
     </>
   )
 }
 
-export default WhatWeDo
+export default whatWeDo
