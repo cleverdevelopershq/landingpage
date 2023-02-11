@@ -1,0 +1,52 @@
+.flipcard {
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flipcardinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flipcard:hover .flipcardinner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flipcardfront, .flipcardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius:30px
+
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flipcardfront {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flipcardback {
+    background-color: #15222B;
+    color: white;
+    transform: rotateY(180deg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
