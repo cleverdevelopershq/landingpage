@@ -4,6 +4,9 @@ import WhatWeDo from '@/components/home/whatWeDo'
 const inter = Inter({ subsets: ['latin'] })
 import Footer from '@/components/footer/footer'
 import Team from '@/components/home/team'
+import WhyUs from '@/components/home/WhyUs'
+import Strategy from '@/components/home/Strategy'
+import Achievement from '@/components/home/Achievement'
 
 
 export default function Home() {
@@ -19,6 +22,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Strategy/>
+        <WhyUs/>
+        <Achievement/>
       <Team />
         <WhatWeDo />
         <Footer />
